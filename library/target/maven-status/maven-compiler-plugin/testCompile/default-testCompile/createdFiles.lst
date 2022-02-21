@@ -1,0 +1,4 @@
+com\masparaga\library\tests\TestBookApi.class
+com\masparaga\library\tests\TestAuthApi.class
+com\masparaga\library\LibraryApplicationTests.class
+com\masparaga\library\JsonHelper.class

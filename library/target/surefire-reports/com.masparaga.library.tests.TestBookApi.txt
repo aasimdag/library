@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.masparaga.library.tests.TestBookApi
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.285 s <<< FAILURE! - in com.masparaga.library.tests.TestBookApi
+testSuccessfulBuy  Time elapsed: 0.174 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: invalid hexadecimal representation of an ObjectId: [book]
+	at com.masparaga.library.tests.TestBookApi.testSuccessfulBuy(TestBookApi.java:59)
+Caused by: java.lang.IllegalArgumentException: invalid hexadecimal representation of an ObjectId: [book]
+	at com.masparaga.library.tests.TestBookApi.testSuccessfulBuy(TestBookApi.java:59)
+
+testSuccessfulNameSearch  Time elapsed: 0.085 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because the return value of "com.masparaga.library.model.dto.SearchBookQuery.getId()" is null
+	at com.masparaga.library.tests.TestBookApi.execute(TestBookApi.java:38)
+	at com.masparaga.library.tests.TestBookApi.testSuccessfulNameSearch(TestBookApi.java:51)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because the return value of "com.masparaga.library.model.dto.SearchBookQuery.getId()" is null
+	at com.masparaga.library.tests.TestBookApi.execute(TestBookApi.java:38)
+	at com.masparaga.library.tests.TestBookApi.testSuccessfulNameSearch(TestBookApi.java:51)
+

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.masparaga.library.LibraryApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.867 s - in com.masparaga.library.LibraryApplicationTests
